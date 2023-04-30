@@ -1,0 +1,583 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/javi/ontologies/2023/3/SpanishRedWineOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/javi/ontologies/2023/3/SpanishRedWineOntology">
+    <Prefix name="" IRI="http://www.semanticweb.org/javi/ontologies/2023/3/SpanishRedWineOntology/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Author: Javier Bravo González</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal>Name: SpanishRedWineOntology</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Body"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cheap"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Expensive"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Full"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Good"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jerez"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Jumilla"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Light"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Old"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Penedés"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Premium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Price"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RedWine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Region"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ribera"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rioja"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Toro"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Valdepeñas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Winery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Year"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Young"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRegion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWinery"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasYear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Matarromera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Melior"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Muga"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Prado_Enea"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ribera"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Rioja"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <Declaration>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Wine"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasRegion"/>
+            <Class IRI="#Region"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Wine"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasWinery"/>
+            <Class IRI="#Winery"/>
+        </ObjectSomeValuesFrom>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Wine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasRegion"/>
+            <Class IRI="#Region"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#Wine"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasWinery"/>
+            <Class IRI="#Winery"/>
+        </ObjectExactCardinality>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Cheap"/>
+        <Class IRI="#Price"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Expensive"/>
+        <Class IRI="#Price"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Full"/>
+        <Class IRI="#Body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Good"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jerez"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Jumilla"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Light"/>
+        <Class IRI="#Body"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Medium"/>
+        <Class IRI="#Price"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Old"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Penedés"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Premium"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RedWine"/>
+        <Class IRI="#Wine"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ribera"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rioja"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Toro"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Valdepeñas"/>
+        <Class IRI="#Region"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Young"/>
+        <Class IRI="#Year"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Cheap"/>
+        <Class IRI="#Expensive"/>
+        <Class IRI="#Medium"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Full"/>
+        <Class IRI="#Light"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Jerez"/>
+        <Class IRI="#Jumilla"/>
+        <Class IRI="#Penedés"/>
+        <Class IRI="#Ribera"/>
+        <Class IRI="#Rioja"/>
+        <Class IRI="#Toro"/>
+        <Class IRI="#Valdepeñas"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Matarromera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RedWine"/>
+        <NamedIndividual IRI="#Melior"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Winery"/>
+        <NamedIndividual IRI="#Muga"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RedWine"/>
+        <NamedIndividual IRI="#Prado_Enea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Ribera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Ribera"/>
+        <NamedIndividual IRI="#Ribera"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Region"/>
+        <NamedIndividual IRI="#Rioja"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Melior"/>
+        <NamedIndividual IRI="#Ribera"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWinery"/>
+        <NamedIndividual IRI="#Melior"/>
+        <NamedIndividual IRI="#Matarromera"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasRegion"/>
+        <NamedIndividual IRI="#Prado_Enea"/>
+        <NamedIndividual IRI="#Rioja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWinery"/>
+        <NamedIndividual IRI="#Prado_Enea"/>
+        <NamedIndividual IRI="#Muga"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Melior"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Melior"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">2014</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasRating"/>
+        <NamedIndividual IRI="#Prado_Enea"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">4.2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasYear"/>
+        <NamedIndividual IRI="#Prado_Enea"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gYear">2022</Literal>
+    </DataPropertyAssertion>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRegion"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasWinery"/>
+    </FunctionalObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRegion"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWinery"/>
+        <Class IRI="#Wine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRegion"/>
+        <Class IRI="#Region"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWinery"/>
+        <Class IRI="#Winery"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasRating"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasYear"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRating"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasYear"/>
+        <Class IRI="#Wine"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRating"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="xsd:float"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">0.0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasYear"/>
+        <Datatype abbreviatedIRI="xsd:gYear"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="urn:swrl:var#w"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRating"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Variable IRI="urn:swrl:var#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Premium"/>
+                <Variable IRI="urn:swrl:var#w"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="urn:swrl:var#w"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasRating"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Variable IRI="urn:swrl:var#r"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="urn:swrl:var#r"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">4.5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Good"/>
+                <Variable IRI="urn:swrl:var#w"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class IRI="#Wine"/>
+                <Variable IRI="urn:swrl:var#w"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty IRI="#hasYear"/>
+                <Variable IRI="urn:swrl:var#w"/>
+                <Variable IRI="urn:swrl:var#y"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThan">
+                <Variable IRI="urn:swrl:var#y"/>
+                <Literal>2019</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class IRI="#Young"/>
+                <Variable IRI="urn:swrl:var#w"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Body</IRI>
+        <Literal>Class representing the consistency of wine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cheap</IRI>
+        <Literal>Subclass of Price indicating a low cost.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Expensive</IRI>
+        <Literal>Subclass of Price indicating a high cost.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Full</IRI>
+        <Literal>Subclass of Body indicating a full consistency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Good</IRI>
+        <Literal>Subclass of rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Jerez</IRI>
+        <Literal>Subclass of Region, located in southwestern Spain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Jumilla</IRI>
+        <Literal>Subclass of Region, located in southeastern Spain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Light</IRI>
+        <Literal>Subclass of Body indicating a ligh consistency.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Medium</IRI>
+        <Literal>Subclass of Price indicating a moderate cost.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Old</IRI>
+        <Literal>Subclass of year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Penedés</IRI>
+        <Literal>Subclass of Region, located in northeastern Spain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Premium</IRI>
+        <Literal>Subclass of rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Price</IRI>
+        <Literal>Class representing the cost of a bottle of wine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rating</IRI>
+        <Literal>Class representing an evaluation of the quality of wine.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#RedWine</IRI>
+        <Literal>Subclass of wine that has red color due to the use of black grapes during fermentation.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#RedWine</IRI>
+        <Literal>https://dbpedia.org/page/Red_wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Region</IRI>
+        <Literal>Class representing a geographic region where wine is produced.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Ribera</IRI>
+        <Literal>subclass of Region, located in the north of Spain, along the Duero River.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Rioja</IRI>
+        <Literal>Subclass of Region, located in northern Spain, primarily in the La Rioja administrative region.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Toro</IRI>
+        <Literal>Subclass of Region, located in the province of Zamora, in the northwest of Spain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Valdepeñas</IRI>
+        <Literal>Subclass of Region, located in central Spain.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Wine</IRI>
+        <Literal>Class thar represents a type of alcoholic beverage made from fermented grapes.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Wine</IRI>
+        <Literal>https://dbpedia.org/page/Wine</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Winery</IRI>
+        <Literal>Class representing a company or place where wine is produced and stored.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <IRI>#Winery</IRI>
+        <Literal>https://dbpedia.org/page/Winery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Year</IRI>
+        <Literal>Class representing the production year.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Young</IRI>
+        <Literal>Subclass of Year</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>The root class that represents anything in the ontology.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
